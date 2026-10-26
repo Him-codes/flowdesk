@@ -1,0 +1,12 @@
+.wrap { position: relative; display: inline-block; }
+.trigger { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 8px; border: 0; border-radius: var(--r-md); background: transparent; }
+.trigger:hover, .trigger[aria-expanded='true'] { background: var(--hover); }
+.menu { position: absolute; top: calc(100% + 6px); z-index: 60; min-width: 208px; padding: 6px; background: var(--card); border: 1px solid var(--border); border-radius: var(--r-md); box-shadow: var(--shadow); }
+.end { right: 0; }
+.start { left: 0; }
+.item { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 40px; padding: 0 12px; border: 0; border-radius: var(--r-sm); background: transparent; text-align: left; }
+.item:hover, .item:focus-visible { background: var(--hover); outline-offset: -2px; }
+.danger { color: var(--error); }
+
+.menu { padding: 7px; border-radius: 14px; box-shadow: var(--shadow); background: var(--surface-raised, var(--card)); }
+.item { border-radius: 8px; transition: background .15s ease, color .15s ease; }

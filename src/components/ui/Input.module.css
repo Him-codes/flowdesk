@@ -1,0 +1,17 @@
+.field { display: flex; flex-direction: column; gap: 6px; }
+.label { font-size: var(--fs-sm); font-weight: 500; }
+.control { position: relative; display: flex; align-items: center; }
+.icon { position: absolute; left: 12px; display: flex; color: var(--text-2); pointer-events: none; }
+.input { width: 100%; min-height: 44px; padding: 0 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); transition: border-color 0.15s; }
+.hasIcon { padding-left: 38px; }
+.input::placeholder { color: var(--text-2); opacity: 0.85; }
+.input:hover { border-color: color-mix(in srgb, var(--text-2) 45%, var(--border)); }
+.input:focus-visible { outline-offset: 0; border-color: var(--accent); }
+.invalid { border-color: var(--error); }
+.msg { font-size: var(--fs-xs); color: var(--text-2); }
+.err { color: var(--error); }
+
+.label { color: var(--text); font-weight: 600; }
+.input { background: color-mix(in srgb, var(--surface) 86%, var(--bg)); border-color: var(--border); border-radius: 10px; transition: border-color .18s ease, box-shadow .18s ease, background .18s ease; }
+.input:focus-visible { box-shadow: 0 0 0 3px var(--ring); }
+.input::placeholder { color: var(--text-3, var(--text-2)); }

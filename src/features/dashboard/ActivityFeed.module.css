@@ -1,0 +1,4 @@
+.title { margin-bottom: 4px; font-size: var(--fs-lg); }
+.list { margin: 0; padding: 0; list-style: none; }
+.skeletonItem { display: flex; gap: 12px; padding: 14px 0; }
+.skeletonLines { display: grid; flex: 1; gap: 8px; }

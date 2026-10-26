@@ -1,0 +1,7 @@
+.layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: center; }
+.name { display: inline-flex; align-items: center; gap: 10px; font-weight: 500; }
+.swatch { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+.muted { color: var(--text-2); }
+.table { margin: 0 -20px -20px; }
+@media (min-width: 768px) { .layout { grid-template-columns: 240px minmax(0, 1fr); } .table { margin: 0 -20px -20px 0; } }
+@media (max-width: 479px) { .table { margin: 0 -16px -16px; } }

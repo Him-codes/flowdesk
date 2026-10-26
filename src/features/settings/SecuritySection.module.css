@@ -1,0 +1,5 @@
+.block { display: grid; gap: 16px; }
+.blockTitle { font-size: var(--fs-md); }
+.form { display: grid; gap: 16px; max-width: 420px; }
+.divider { margin: 4px 0; border: 0; border-top: 1px solid var(--border); }
+.status { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }

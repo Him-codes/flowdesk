@@ -1,0 +1,2 @@
+.bar { fill: var(--accent); transition: opacity 0.12s; }
+.dim { opacity: 0.4; }

@@ -1,0 +1,4 @@
+.logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+.mark { width: 32px; height: 32px; flex: 0 0 32px; max-width: none; filter: drop-shadow(0 3px 6px rgb(255 107 44 / 18%)); }
+.word { line-height: 1; }
+@media (max-width: 479px) { .collapse .word { display: none; } }

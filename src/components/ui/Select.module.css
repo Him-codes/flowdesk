@@ -1,0 +1,15 @@
+.field { display: flex; flex-direction: column; gap: 6px; }
+.label { font-size: var(--fs-sm); font-weight: 500; }
+.control { position: relative; display: flex; align-items: center; }
+.select { width: 100%; min-height: 44px; padding: 0 38px 0 14px; appearance: none; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); cursor: pointer; text-overflow: ellipsis; transition: border-color 0.15s; }
+.select:hover:not(:disabled) { border-color: color-mix(in srgb, var(--text-2) 45%, var(--border)); }
+.select:focus-visible { outline-offset: 0; border-color: var(--accent); }
+.select:disabled { opacity: 0.55; cursor: not-allowed; }
+.invalid { border-color: var(--error); }
+.chevron { position: absolute; right: 12px; display: flex; color: var(--text-2); pointer-events: none; }
+.msg { font-size: var(--fs-xs); color: var(--text-2); }
+.err { color: var(--error); }
+
+.label { color: var(--text); font-weight: 600; }
+.select { background-color: color-mix(in srgb, var(--surface) 86%, var(--bg)); border-radius: 10px; transition: border-color .18s ease, box-shadow .18s ease; }
+.select:focus-visible { box-shadow: 0 0 0 3px var(--ring); }

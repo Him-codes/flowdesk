@@ -1,0 +1,6 @@
+.empty { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 48px 24px; text-align: center; }
+.icon { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; margin-bottom: 8px; border-radius: 50%; background: var(--hover); color: var(--text-2); }
+.error .icon { background: color-mix(in srgb, var(--error) 14%, transparent); color: var(--error); }
+.title { font-size: var(--fs-lg); }
+.desc { max-width: 40ch; color: var(--text-2); }
+.action { margin-top: 12px; }

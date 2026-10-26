@@ -1,0 +1,5 @@
+.nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 20px; border-top: 1px solid var(--border); }
+.summary { color: var(--text-2); font-size: var(--fs-sm); }
+.controls { display: flex; align-items: center; gap: 8px; }
+.page { min-width: 88px; color: var(--text-2); font-size: var(--fs-sm); text-align: center; font-variant-numeric: tabular-nums; }
+@media (max-width: 479px) { .nav { padding: 14px 16px; } .summary { width: 100%; } .controls { width: 100%; justify-content: space-between; } }

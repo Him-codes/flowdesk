@@ -1,0 +1,14 @@
+.bar { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: var(--topbar-h); padding: env(safe-area-inset-top, 0px) 24px 0; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.left, .right { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.demo { display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px; border: 1px dashed var(--border); border-radius: 999px; color: var(--text-2); font-size: var(--fs-xs); font-weight: 500; white-space: nowrap; }
+.demo::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--warning); }
+.short { display: none; }
+.name { font-size: var(--fs-sm); font-weight: 500; }
+@media (max-width: 1023px) { .bar { padding-left: 12px; padding-right: 12px; } }
+@media (max-width: 639px) { .name, .chev { display: none; } }
+@media (max-width: 479px) { .long { display: none; } .short { display: inline; } }
+/* Very narrow phones (320px): tighten gaps so the bar never pushes the page wider than the screen. */
+@media (max-width: 359px) { .left, .right { gap: 4px; } .demo { padding: 4px 8px; } }
+
+.bar { background: color-mix(in srgb, var(--bg) 82%, transparent); border-bottom-color: var(--divider, var(--border)); }
+.demo { background: color-mix(in srgb, var(--card) 60%, transparent); }

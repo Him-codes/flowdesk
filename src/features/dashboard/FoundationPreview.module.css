@@ -1,0 +1,9 @@
+.preview { display: grid; gap: 24px; }
+.title { font-size: 18px; }
+.note { margin-top: 4px; color: var(--text-2); }
+.group { display: grid; gap: 10px; }
+.label { color: var(--text-2); font-size: var(--fs-sm); font-weight: 600; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.stack { display: grid; gap: 8px; max-width: 420px; }
+.field { max-width: 420px; }
+.panel { max-width: 420px; padding: 12px 4px 0; color: var(--text-2); }

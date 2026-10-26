@@ -1,0 +1,9 @@
+.badge { --tone: var(--text-2); display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 999px; font-size: var(--fs-xs); font-weight: 600; line-height: 20px; white-space: nowrap; color: var(--tone); background: color-mix(in srgb, var(--tone) 14%, transparent); }
+.dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.success { --tone: var(--success); }
+.warning { --tone: var(--warning); }
+.error { --tone: var(--error); }
+.info { --tone: var(--info); }
+.accent { --tone: var(--accent); }
+
+.badge { padding: 2px 9px; border: 1px solid color-mix(in srgb, var(--tone) 20%, transparent); font-weight: 650; letter-spacing: .005em; }

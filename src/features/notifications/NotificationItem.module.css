@@ -1,0 +1,18 @@
+.item { position: relative; display: flex; gap: 14px; padding: 16px 20px 16px 24px; border-bottom: 1px solid var(--border); outline-offset: -2px; }
+.item:last-child { border-bottom: 0; }
+.unread { background: var(--accent-soft); }
+.unread::before { content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 3px; background: var(--accent); }
+.icon { --tone: var(--text-2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%; background: color-mix(in srgb, var(--tone) 14%, transparent); color: var(--tone); }
+.payment { --tone: var(--success); }
+.customer { --tone: var(--info); }
+.warning { --tone: var(--warning); }
+.error { --tone: var(--error); }
+.body { flex: 1; min-width: 0; }
+.title { font-weight: 500; }
+.unread .title { font-weight: 700; }
+.message { color: var(--text-2); overflow-wrap: anywhere; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 4px; color: var(--text-2); font-size: var(--fs-xs); }
+.link { padding: 6px 0; color: var(--accent); font-weight: 600; }
+.link:hover { text-decoration: underline; }
+.actions { flex-shrink: 0; align-self: flex-start; }
+@media (max-width: 639px) { .item { flex-wrap: wrap; padding: 14px 16px 14px 20px; } .actions { margin-left: 54px; } }

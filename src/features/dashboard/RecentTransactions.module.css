@@ -1,0 +1,13 @@
+.header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 20px 20px 14px; }
+.title { font-size: var(--fs-lg); }
+.link { display: inline-flex; align-items: center; min-height: 36px; padding: 0 8px; border-radius: var(--r-sm); color: var(--accent); font-size: var(--fs-sm); font-weight: 600; }
+.link:hover { text-decoration: underline; }
+.customer { display: inline-flex; align-items: center; gap: 10px; font-weight: 500; }
+.amount { font-weight: 600; }
+.id { color: var(--text-2); }
+@media (max-width: 479px) { .header { padding: 16px 16px 12px; } }
+
+.header { padding-top: 22px; }
+.title { font-weight: 650; letter-spacing: -.015em; }
+.link { transition: background .15s ease; }
+.link:hover { background: var(--accent-soft); text-decoration: none; }

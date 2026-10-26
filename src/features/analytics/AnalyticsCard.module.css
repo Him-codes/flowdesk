@@ -1,0 +1,6 @@
+.header { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 8px 16px; margin-bottom: 16px; }
+.title { font-size: var(--fs-lg); }
+.headline { text-align: right; }
+.value { font-size: var(--fs-xl); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.stale { opacity: 0.5; transition: opacity 0.15s; }
+@media (max-width: 479px) { .headline { text-align: left; } }

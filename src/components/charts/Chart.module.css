@@ -1,0 +1,11 @@
+.figure { margin: 0; }
+.plot { position: relative; width: 100%; border-radius: var(--r-sm); touch-action: pan-y; }
+.grid { stroke: var(--border); stroke-dasharray: 3 4; }
+.axis { fill: var(--text-2); font-size: 11px; }
+.tooltip { position: absolute; top: 4px; z-index: 2; padding: 6px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-sm); box-shadow: var(--shadow); font-size: var(--fs-xs); white-space: nowrap; pointer-events: none; }
+.tipLabel { color: var(--text-2); }
+.tipValue { font-size: var(--fs-sm); font-weight: 600; font-variant-numeric: tabular-nums; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 0 0 12px; padding: 0; list-style: none; color: var(--text-2); font-size: var(--fs-xs); }
+.legendItem { display: inline-flex; align-items: center; gap: 6px; }
+.swatch { width: 18px; border-top: 2px solid var(--accent); }
+.swatchDashed { border-top: 2px dashed var(--text-2); }

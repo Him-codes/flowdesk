@@ -1,0 +1,2 @@
+.form { display: grid; gap: 16px; }
+.note { color: var(--text-2); font-size: var(--fs-xs); }

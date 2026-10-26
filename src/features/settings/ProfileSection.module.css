@@ -1,0 +1,16 @@
+.photo { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.photoText { display: grid; gap: 8px; }
+.photoLabel { font-size: var(--fs-sm); font-weight: 500; }
+.photoActions { display: flex; flex-wrap: wrap; gap: 8px; }
+.form { display: grid; gap: 16px; max-width: 520px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.error { color: var(--error); font-size: var(--fs-xs); }
+.note { color: var(--text-2); font-size: var(--fs-xs); }
+
+.cropEditor { display: grid; justify-items: center; gap: 16px; }
+.cropHelp { margin: 0; color: var(--text-2); font-size: var(--fs-sm); text-align: center; }
+.cropPreview { width: min(100%, 240px); aspect-ratio: 1; overflow: hidden; border-radius: 50%; background: var(--surface-2); border: 2px solid var(--border); }
+.cropPreview img { display: block; width: 100%; height: 100%; object-fit: cover; transform-origin: center; }
+.cropControl { display: grid; width: 100%; gap: 6px; font-size: var(--fs-sm); color: var(--text-1); }
+.cropControl input { width: 100%; accent-color: var(--accent); }
+.cropActions { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 8px; }

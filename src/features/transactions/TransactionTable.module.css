@@ -1,0 +1,4 @@
+.idLink { padding: 6px 0; border: 0; background: transparent; color: var(--accent); font-weight: 600; text-align: left; }
+.idLink:hover { text-decoration: underline; }
+.customer { display: inline-flex; align-items: center; gap: 10px; font-weight: 500; }
+.amount { font-weight: 600; }

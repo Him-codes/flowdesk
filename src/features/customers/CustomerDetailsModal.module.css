@@ -1,0 +1,21 @@
+.content { display: grid; gap: 24px; }
+.profile { display: flex; align-items: center; gap: 16px; }
+.who { display: grid; gap: 4px; justify-items: start; min-width: 0; }
+.name { font-size: var(--fs-xl); font-weight: 700; letter-spacing: -0.02em; overflow-wrap: anywhere; }
+.company { color: var(--text-2); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+.stat { padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); }
+.statLabel { color: var(--text-2); font-size: var(--fs-xs); }
+.statValue { margin-top: 2px; font-size: var(--fs-lg); font-weight: 700; font-variant-numeric: tabular-nums; }
+.heading { margin-bottom: 8px; font-size: var(--fs-md); }
+.list { margin: 0; padding: 0; list-style: none; }
+.muted { color: var(--text-2); font-size: var(--fs-sm); }
+.note { margin-top: 8px; }
+.id { color: var(--text-2); }
+.skeleton { display: grid; gap: 16px; }
+.skeletonRow { display: flex; align-items: center; gap: 16px; }
+.skeletonLines { display: grid; flex: 1; gap: 8px; }
+.sectionHeader { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.sectionHeader .heading { margin-bottom: 0; }
+.link { padding: 4px 0; color: var(--accent); font-size: var(--fs-sm); font-weight: 600; white-space: nowrap; }
+.link:hover { text-decoration: underline; }

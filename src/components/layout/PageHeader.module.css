@@ -1,0 +1,10 @@
+.header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+.title { font-size: var(--fs-2xl); }
+.sub { margin-top: 4px; color: var(--text-2); }
+.actions { display: flex; gap: 8px; }
+@media (max-width: 639px) { .title { font-size: 24px; } }
+
+.header { margin-bottom: 28px; align-items: center; }
+.title { font-size: clamp(26px, 2.1vw, 32px); font-weight: 750; letter-spacing: -.045em; line-height: 1.15; }
+.sub { margin-top: 8px; font-size: var(--fs-md); color: var(--text-2); }
+@media (max-width: 639px) { .title { font-size: 25px; } .header { margin-bottom: 22px; } }

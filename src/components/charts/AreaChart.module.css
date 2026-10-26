@@ -1,0 +1,6 @@
+.line { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.previous { fill: none; stroke: var(--text-2); stroke-width: 1.5; stroke-dasharray: 4 4; stroke-linejoin: round; opacity: 0.8; }
+.guide { stroke: var(--text-2); stroke-width: 1; stroke-dasharray: 3 3; }
+.dot { fill: var(--card); stroke: var(--accent); stroke-width: 2; }
+.stopTop { stop-color: var(--accent); stop-opacity: 0.26; }
+.stopBottom { stop-color: var(--accent); stop-opacity: 0; }

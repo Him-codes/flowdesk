@@ -1,0 +1,8 @@
+.toolbar { margin-bottom: 16px; }
+.group { margin-bottom: 24px; }
+.group:last-child { margin-bottom: 0; }
+.heading { margin-bottom: 8px; color: var(--text-2); font-size: var(--fs-sm); font-weight: 600; }
+.list { margin: 0; padding: 0; list-style: none; }
+.skeletonRow { display: flex; gap: 14px; padding: 16px 20px; border-bottom: 1px solid var(--border); }
+.skeletonRow:last-child { border-bottom: 0; }
+.skeletonLines { display: grid; flex: 1; gap: 8px; }

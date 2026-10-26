@@ -1,0 +1,13 @@
+.item { display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.item:last-child { padding-bottom: 0; border-bottom: 0; }
+.icon { --tone: var(--text-2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: color-mix(in srgb, var(--tone) 14%, transparent); color: var(--tone); }
+.payment, .invoice { --tone: var(--success); }
+.customer { --tone: var(--info); }
+.failed { --tone: var(--error); }
+.pending { --tone: var(--warning); }
+.body { flex: 1; min-width: 0; }
+.name { font-weight: 500; }
+.desc { color: var(--text-2); font-size: var(--fs-sm); overflow-wrap: anywhere; }
+.time { margin-top: 2px; color: var(--text-2); font-size: var(--fs-xs); }
+.link { display: inline-block; padding: 4px 0; color: var(--accent); font-weight: 600; }
+.link:hover { text-decoration: underline; }

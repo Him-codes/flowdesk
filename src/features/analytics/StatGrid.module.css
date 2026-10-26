@@ -1,0 +1,4 @@
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin: 16px 0 0; }
+.stat { padding: 12px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); }
+.label { color: var(--text-2); font-size: var(--fs-xs); }
+.value { margin: 2px 0 0; font-weight: 600; font-variant-numeric: tabular-nums; }

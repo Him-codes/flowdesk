@@ -1,0 +1,4 @@
+.spark { width: 100%; height: 32px; }
+.spark path { fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.up { color: var(--success); }
+.down { color: var(--error); }

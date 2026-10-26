@@ -1,0 +1,8 @@
+.viewport { position: fixed; z-index: 200; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 8px; width: min(380px, calc(100vw - 32px)); pointer-events: none; }
+.toast { --tone: var(--info); pointer-events: auto; display: flex; align-items: flex-start; gap: 12px; padding: 12px 6px 12px 14px; background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--tone); border-radius: var(--r-md); box-shadow: var(--shadow); animation: in 0.2s ease-out; }
+.success { --tone: var(--success); }
+.error { --tone: var(--error); }
+.icon { flex-shrink: 0; margin-top: 2px; color: var(--tone); }
+.msg { flex: 1; padding-top: 2px; font-weight: 500; }
+@keyframes in { from { opacity: 0; transform: translateY(8px); } }
+@media (max-width: 639px) { .viewport { left: 16px; width: auto; bottom: calc(var(--tabbar-h) + 16px + env(safe-area-inset-bottom, 0px)); } }

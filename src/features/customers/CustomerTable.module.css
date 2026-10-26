@@ -1,0 +1,7 @@
+.nameCell { display: inline-flex; align-items: center; gap: 12px; min-width: 0; }
+.nameText { display: flex; flex-direction: column; min-width: 0; text-align: left; }
+.name { font-weight: 500; }
+.sub { display: none; color: var(--text-2); font-size: var(--fs-xs); overflow-wrap: anywhere; font-weight: 400; }
+.muted { color: var(--text-2); overflow-wrap: anywhere; }
+.amount { font-weight: 600; }
+@media (min-width: 768px) and (max-width: 1279px) { .sub { display: block; } }
