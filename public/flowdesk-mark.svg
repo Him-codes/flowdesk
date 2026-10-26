@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">FlowDesk</title>
+  <defs>
+    <linearGradient id="flowdesk-orange" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF8952"/>
+      <stop offset="1" stop-color="#FF5B24"/>
+    </linearGradient>
+    <linearGradient id="flowdesk-glow" x1="15" y1="13" x2="49" y2="51" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF0E8"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#flowdesk-orange)"/>
+  <path d="M20 18.5H43.5C46 18.5 47.5 20 47.5 22.5C47.5 25 46 26.5 43.5 26.5H20" fill="none" stroke="url(#flowdesk-glow)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 32H38.5C41 32 42.5 33.5 42.5 36C42.5 38.5 41 40 38.5 40H20" fill="none" stroke="url(#flowdesk-glow)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 45.5H31" fill="none" stroke="url(#flowdesk-glow)" stroke-width="5.5" stroke-linecap="round"/>
+</svg>
