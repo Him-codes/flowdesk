@@ -15,3 +15,8 @@
 .input { background: color-mix(in srgb, var(--surface) 86%, var(--bg)); border-color: var(--border); border-radius: 10px; transition: border-color .18s ease, box-shadow .18s ease, background .18s ease; }
 .input:focus-visible { box-shadow: 0 0 0 3px var(--ring); }
 .input::placeholder { color: var(--text-3, var(--text-2)); }
+
+/* Keep mobile browsers from zooming the page when a form field receives focus. */
+@media (max-width: 639px) {
+  .input { font-size: 16px; }
+}

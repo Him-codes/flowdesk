@@ -4,6 +4,7 @@ import { CheckSquare, CircleDollarSign, Info, UserPlus, type LucideIcon } from '
 import { Button } from '../../components/ui'
 import type { AppNotification, NotificationType } from '../../types'
 import { cx } from '../../utils/cx'
+import { useToast } from '../../context/ToastContext'
 import { formatRelative } from '../../utils/format'
 import s from './NotificationItem.module.css'
 
@@ -19,11 +20,13 @@ interface NotificationItemProps {
 /** Unread items are marked by a tinted background, accent edge and bold title, plus a screen-reader "Unread" prefix. */
 export function NotificationItem({ notification: n, read, onMarkRead }: NotificationItemProps) {
   const ref = useRef<HTMLLIElement>(null)
+  const toast = useToast()
   const Icon = ICONS[n.type]
   const tone = n.tone === 'error' ? s.error : n.tone === 'warning' ? s.warning : s[n.type]
 
   const markRead = () => {
     onMarkRead(n.id)
+    toast.success(`Marked as read: ${n.title}`)
     // The button disappears once read, so keep keyboard focus on the item instead of losing it.
     ref.current?.focus()
   }

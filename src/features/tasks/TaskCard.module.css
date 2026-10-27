@@ -5,9 +5,9 @@
 .check:hover .box { border-color: var(--accent); }
 .checked .box, .checked:hover .box { background: var(--success); border-color: var(--success); }
 .body { flex: 1; min-width: 0; }
-.name { font-weight: 600; overflow-wrap: anywhere; }
+.name { min-width: 0; font-weight: 600; overflow-wrap: break-word; word-break: normal; }
 .done .name { color: var(--text-2); text-decoration: line-through; }
-.desc { display: -webkit-box; margin-top: 2px; overflow: hidden; color: var(--text-2); font-size: var(--fs-sm); -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow-wrap: anywhere; }
+.desc { display: -webkit-box; margin-top: 2px; overflow: hidden; color: var(--text-2); font-size: var(--fs-sm); -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow-wrap: break-word; word-break: normal; hyphens: auto; }
 .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 10px; color: var(--text-2); font-size: var(--fs-sm); }
 .due, .assignee { display: inline-flex; align-items: center; gap: 6px; }
 .overdue { color: var(--error); font-weight: 600; }
